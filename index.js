@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const mercadopago = require("mercadopago");
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,8 +8,8 @@ mercadopago.configure({
     "TEST-2934584133936959-071902-7591688dc0a97744fcabf2d3e4c7e179-745740452",
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 let products = [
   {
