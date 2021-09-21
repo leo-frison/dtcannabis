@@ -105,9 +105,9 @@ app.post("/api/pay", async (req, res) => {
   let preference = {
     items: [],
     back_urls: {
-      success: "http://localhost:3001/feedback",
-      failure: "http://localhost:3001/feedback",
-      pending: "http://localhost:3001/feedback",
+      success: "https://tnlp.tk",
+      failure: "https://tnlp.tk",
+      pending: "https://tnlp.tk",
     },
     auto_return: "approved",
   };
