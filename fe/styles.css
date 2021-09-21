@@ -12,19 +12,24 @@ button {
 }
 
 .page-nav {
-    background-color: #2196F3;
+    background-color: green;
     border: 1px solid black;
     position: relative;
 }
 
 .page-nav h1 {
-    margin: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.page-nav .detective {
+     width: 100px;
 }
 
 .button-checkout {
-    background-color: white;
+    background-image: src('images/maria.jpg');
     color: black;
-    border: 2px solid #008CBA; /* Blue */
+    border: 2px solid black; /* Blue */
     transition-duration: 0.4s;
     position: absolute;
     right: 15px;
