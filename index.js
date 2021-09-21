@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mercadopago = require("mercadopago");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 mercadopago.configure({
   access_token:
@@ -106,9 +106,9 @@ app.post("/api/pay", async (req, res) => {
   let preference = {
     items: [],
     back_urls: {
-      success: "http://localhost:3000/feedback",
-      failure: "http://localhost:3000/feedback",
-      pending: "http://localhost:3000/feedback",
+      success: "http://localhost:3001/feedback",
+      failure: "http://localhost:3001/feedback",
+      pending: "http://localhost:3001/feedback",
     },
     auto_return: "approved",
   };
